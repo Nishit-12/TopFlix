@@ -1,12 +1,12 @@
 import React from 'react';
 import HeroSection from "@/app/components/HeroSection";
 
-const Page = () => {
+const About = () => {
     return (
         <>
-          <HeroSection title={"LET'S WATCH MOVIES TOGETHER"} imageUrl={"/about.svg"}/>
+            <HeroSection title={"OUR STORY"} imageUrl={"/about1.svg"}/>
         </>
     );
 };
 
-export default Page;
+export default About;
