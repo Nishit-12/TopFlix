@@ -20,34 +20,37 @@ const Footer = () => {
                             <span className={footerStyles.logo_name}>Nishit Patel</span>
                         </div>
                         <div className={footerStyles[`media-icons`]}>
-                            <Link href="#"><i > <FaFacebookF/> </i></Link>
-                            <Link href="#"><i > <FaTwitter/> </i> </Link>
-                            <Link href="#"><i > <FaInstagram/>  </i></Link>
-                            <Link href="#"><i > <FaLinkedinIn /> </i></Link>
-                            <Link href="#"><i > <FaYoutube />  </i></Link>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i><FaFacebookF /></i>
+                        </a>
+
+                            <Link href="https://www.twitter.com" target='_blank'><i > <FaTwitter/> </i> </Link>
+                            <Link href="https://www.instagram.com" target='_blank'><i > <FaInstagram/>  </i></Link>
+                            <Link href="https://www.linkedin.com" target='_blank'><i > <FaLinkedinIn /> </i></Link>
+                            <Link href="https://www.youtube.com" target='_blank'><i > <FaYoutube />  </i></Link>
                         </div>
                     </div>
                     <div className={footerStyles['link-boxes']}>
                         <ul className={footerStyles.box}>
                             <li className={footerStyles.link_name}>Company</li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact US</a></li>
-                            <li><a href="#">About US</a></li>
-                            <li><a href="#">Get started</a></li>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/contact">Contact US</Link></li>
+                            <li><Link href="/about">About US</Link></li>
+                            <li><Link href="/">Get started</Link></li>
                         </ul>
                         <ul className={footerStyles.box}>
                             <li className={footerStyles.link_name}>Services</li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact US</a></li>
-                            <li><a href="#">About US</a></li>
-                            <li><a href="#">Get Started</a></li>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/contact">Contact US</Link></li>
+                            <li><Link href="/about">About US</Link></li>
+                            <li><Link href="/">Get Started</Link></li>
                         </ul>
                         <ul className={footerStyles.box}>
                             <li className={footerStyles.link_name}>Account</li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">My account</a></li>
-                            <li><a href="#">Prefrences</a></li>
-                            <li><a href="#">Purchase</a></li>
+                            <li><Link href="/">Profile</Link></li>
+                            <li><Link href="/">My account</Link></li>
+                            <li><Link href="/">Prefrences</Link></li>
+                            <li><Link href="/">Purchase</Link></li>
                         </ul>
                         <ul className={footerStyles.box}>
                             <li className={footerStyles.link_name}>Shows</li>
@@ -63,7 +66,7 @@ const Footer = () => {
                 <div className={footerStyles['bottom-details']}>
                     <div className={footerStyles.bottom_text}>
                         <span className={footerStyles.copyright_text}> Copyright © 2023
-                            <Link href="/>"> Nishit Patel.</Link> All rights reserved </span>
+                            <Link href="/"> Nishit Patel.</Link> All rights reserved </span>
                         <span className={footerStyles.policy_terms}>
                           <Link href="/">Privacy policy</Link>
                           <Link href="/">Terms & condition</Link>
