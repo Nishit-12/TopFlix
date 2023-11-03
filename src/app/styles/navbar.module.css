@@ -103,7 +103,7 @@
         padding: 0 5rem;
     }
 
-    .mobile-navbar-btn {
+    .mobile-navbar-btn{
         display: inline-block;
         z-index: 999;
         /*border: .1rem solid #161617;*/

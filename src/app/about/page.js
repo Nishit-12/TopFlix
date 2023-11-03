@@ -1,12 +1,10 @@
-import React from 'react';
-import HeroSection from "@/app/components/HeroSection";
+import React from 'react'
+import HeroSection from '../components/HeroSection'
 
 const About = () => {
-    return (
-        <>
-            <HeroSection title={"OUR STORY"} imageUrl={"/about1.svg"}/>
-        </>
-    );
-};
+  return (
+    <HeroSection title={"OUR STORY"} imageUrl={"/about1.svg"}/>
+  )
+}
 
-export default About;
+export default About

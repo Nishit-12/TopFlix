@@ -2,13 +2,10 @@
 
 import React, {useState} from 'react';
 import styles from "@/app/styles/contact.module.css"
-import {Mulish} from "next/font/google";
-import {set} from "mongoose";
+import {Inter, Mulish} from "next/font/google";
 
 
-const mulish = Mulish({
-    weight: ['300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'], display: 'swap'
-})
+const inter = Inter({ subsets: ["latin"] });
 const ContactForm = () => {
 
     const [user, setUser] = useState({
@@ -73,7 +70,7 @@ const ContactForm = () => {
             <label htmlFor="username" className={styles.label}>
                 Enter Your Name
                 <input type="text" name="username" id="username" placeholder="Enter Your Name"
-                       className={mulish.className} value={user.username} onChange={handleChange} autoComplete="off"
+                       className={inter.c} value={user.username} onChange={handleChange} autoComplete="off"
                        required/>
             </label>
 
@@ -85,7 +82,7 @@ const ContactForm = () => {
             <label htmlFor="email" className={styles.label}>
                 Email
                 <input type="email" name="email" id="email" placeholder="Enter Your Email"
-                       className={mulish.className} value={user.email} onChange={handleChange} autoComplete="off"
+                       className={inter.c} value={user.email} onChange={handleChange} autoComplete="off"
                        required/>
             </label>
 
@@ -97,7 +94,7 @@ const ContactForm = () => {
             <label htmlFor="phone" className={styles.label}>
                 Phone
                 <input type="number" name="phone" id="phone" placeholder="Enter Your Phone"
-                       className={mulish.className} value={user.phone} onChange={handleChange} autoComplete="off"
+                       className={inter.c} value={user.phone} onChange={handleChange} autoComplete="off"
                        required/>
             </label>
 
@@ -109,7 +106,7 @@ const ContactForm = () => {
             <label htmlFor="message" className={styles.label}>
                 Message
                 <textarea name="message" id="message" placeholder="Enter Your Message" rows={5}
-                          className={mulish.className} value={user.message} onChange={handleChange} autoComplete="off"
+                          className={inter.c} value={user.message} onChange={handleChange} autoComplete="off"
                           required/>
             </label>
 
@@ -119,7 +116,7 @@ const ContactForm = () => {
         <div>
             {status === 'success' && <p className={styles.success_msg}>Thanks For Submitting Your Message!</p>}
             {status === 'error' && <p className={styles.error_msg}>There Was An Error Submitting Your Message!</p>}
-            <button type="submit" className={mulish.className}>Send Message</button>
+            <button type="submit" className={inter.c}>Send Message</button>
         </div>
 
     </form>);

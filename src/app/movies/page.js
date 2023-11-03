@@ -18,7 +18,7 @@ const Movie = async () => {
     const data = await res.json();
 
     const main_data = data.titles;
-    console.log(data)
+    // console.log(data)
 
 
     return (
