@@ -2,7 +2,7 @@
 
 import React, {useState} from 'react';
 import styles from "@/app/styles/contact.module.css"
-import {Inter, Mulish} from "next/font/google";
+import {Inter} from "next/font/google";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -70,7 +70,7 @@ const ContactForm = () => {
             <label htmlFor="username" className={styles.label}>
                 Enter Your Name
                 <input type="text" name="username" id="username" placeholder="Enter Your Name"
-                       className={inter.c} value={user.username} onChange={handleChange} autoComplete="off"
+                       className={inter.className} value={user.username} onChange={handleChange} autoComplete="off"
                        required/>
             </label>
 
@@ -82,7 +82,7 @@ const ContactForm = () => {
             <label htmlFor="email" className={styles.label}>
                 Email
                 <input type="email" name="email" id="email" placeholder="Enter Your Email"
-                       className={inter.c} value={user.email} onChange={handleChange} autoComplete="off"
+                       className={inter.className} value={user.email} onChange={handleChange} autoComplete="off"
                        required/>
             </label>
 
@@ -94,7 +94,7 @@ const ContactForm = () => {
             <label htmlFor="phone" className={styles.label}>
                 Phone
                 <input type="number" name="phone" id="phone" placeholder="Enter Your Phone"
-                       className={inter.c} value={user.phone} onChange={handleChange} autoComplete="off"
+                       className={inter.className} value={user.phone} onChange={handleChange} autoComplete="off"
                        required/>
             </label>
 
@@ -106,7 +106,7 @@ const ContactForm = () => {
             <label htmlFor="message" className={styles.label}>
                 Message
                 <textarea name="message" id="message" placeholder="Enter Your Message" rows={5}
-                          className={inter.c} value={user.message} onChange={handleChange} autoComplete="off"
+                          className={inter.className} value={user.message} onChange={handleChange} autoComplete="off"
                           required/>
             </label>
 
@@ -116,7 +116,7 @@ const ContactForm = () => {
         <div>
             {status === 'success' && <p className={styles.success_msg}>Thanks For Submitting Your Message!</p>}
             {status === 'error' && <p className={styles.error_msg}>There Was An Error Submitting Your Message!</p>}
-            <button type="submit" className={inter.c}>Send Message</button>
+            <button type="submit" className={inter.className}>Send Message</button>
         </div>
 
     </form>);
