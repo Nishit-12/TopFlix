@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 
-html {
+html,body {
     font-size: 62.5%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 /* Remove default margin and padding */

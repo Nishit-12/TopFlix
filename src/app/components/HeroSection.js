@@ -7,24 +7,28 @@ import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const HeroSection = ({ title, imageUrl }) => {
+const HeroSection = ({ title, desc, imageUrl }) => {
   return (
     <main className={heroStyles.main_section}>
       <div className={styles.container}>
         <div className={styles.grid_two_section}>
           <div className={heroStyles.hero_content}>
-            <h1>{title}</h1>
-            <p>
-              From award-winning dramas to blockbuster action movies, we&apos;ve
-              got you covered. Browse our selection of the latest and greatest
-              movies, and find your new favorite today.
-            </p>
+            <div className={styles.resh1}>
+              <h1>{title}</h1>
+            </div>
+            <p>{desc}</p>
             <Link href="/movies">
               <button className={inter.className}>Explore Movies</button>
             </Link>
           </div>
-          <div className={heroStyles.hero_image}>
-            <Image src={imageUrl} alt="Netflix" width={500} height={500} />
+          <div className={`${heroStyles.hero_image}`}>
+            <Image
+              className={styles.resimage}
+              src={imageUrl}
+              alt="Netflix"
+              width={500}
+              height={500}
+            />
           </div>
         </div>
       </div>

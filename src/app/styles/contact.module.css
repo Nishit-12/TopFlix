@@ -125,13 +125,20 @@
 
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 999px) {
     .grid{
         display: grid;
         grid-template-columns: 1fr;
         gap: 5rem;
         margin: 6rem auto;
     }
+
+    .rescontact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
 
 }
 

@@ -31,6 +31,7 @@
 
 .movie_title {
   margin: 3.2rem 0 3.2rem 0;
+  margin-bottom: 40px;
 }
 
 .movie_title span {
@@ -141,7 +142,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   .grid_two_section {
     grid-template-columns: 1fr;
   }
@@ -149,4 +150,28 @@
   .card_section {
     justify-content: center;
   }
+
+  .resimage {
+    width: 250px;
+    margin-left: 20px;
+  }
+
+  .resh1{
+    margin-top: 25px;
+  }
+
+  .container {
+    padding-bottom: 15rem;
+    
+  }
+
+  .resimageid {
+    width: 340px;
+  }
+
+  .restext h1{
+    font-size: xx-large;
+  }
+
+
 }
